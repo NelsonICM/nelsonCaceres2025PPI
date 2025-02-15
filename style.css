@@ -1,0 +1,46 @@
+/* Hero section */
+.hero {
+    background: url('https://source.unsplash.com/1600x700/?switzerland,alps') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero p, .hero a {
+    position: relative;
+    z-index: 2;
+}
+
+/* Contenedor del carrusel */
+#carouselHotel {
+    width: 100%;
+    max-width: 800px;  /* No más de 800px de ancho */
+    margin: auto; /* Centrar el carrusel */
+}
+
+/* Imágenes del carrusel */
+.carousel-img {
+    width: 100%; /* Ocupar el 100% del contenedor */
+    height: 300px; /* Reducir la altura */
+    max-height: 300px; /* Forzar un tamaño máximo */
+    object-fit: cover; /* Ajustar sin deformar */
+}
+
+/* Formulario */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
