@@ -1,0 +1,42 @@
+.hero {
+    background: url('./img/hero_bg.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero p, .hero a {
+    position: relative;
+    z-index: 2;
+}
+
+#carouselHotel {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
